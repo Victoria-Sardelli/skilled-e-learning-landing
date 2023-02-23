@@ -106,7 +106,8 @@ footer {
 }
 
 .intro__img {
-    margin: 2.875rem 1.5em 0 1.5em;
+    margin-top: 2.875rem; /*  1.5em 0 1.5em*/
+    width: 100vw;
 }
 
 /* || Course Tiles */
@@ -132,6 +133,7 @@ footer {
     padding: 0 1.75rem;
     border-radius: 0.625rem;
     position: relative;
+    flex-grow: 1;
 }
 
 .tile__img {
