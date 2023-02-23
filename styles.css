@@ -1,0 +1,178 @@
+/*　|| Resets */
+
+html {
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* || General */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+/* || Buttons */
+
+.get-started-button {
+    color: #FFFFFF;
+    background-color: #13183F;
+    font-weight: 700;
+    border: none;
+    border-radius: 1.75rem;
+    line-height: 1.75rem;
+    padding: 0.5625rem 1.5rem 0.6875rem 1.5rem;
+}
+
+.cool-gradient {
+    background-color: #4851FF; /* for browsers that don't support gradient */
+    background: linear-gradient(#4851FF, #F02AA6);
+}
+
+.warm-gradient {
+    background-color: #FF6F48; /* for browsers that don't support gradient */
+    background: linear-gradient(#FF6F48, #F02AA6);
+}
+
+/* || Header and Footer */
+
+header,
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    margin: 1rem 1rem 0 1rem;
+}
+
+footer {
+    background-color: #13183F;
+    padding: 2.25rem 1rem 2.25rem 1rem;
+}
+
+.brand-name {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #13183F;
+}
+
+.brand-name--white {
+    color: #FFFFFF;
+}
+
+
+/* || Intro */
+
+.intro__heading {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 2.375rem 1rem 0 1rem;
+}
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.intro__description {
+    margin: 1.625rem 1rem 0 1rem;
+    line-height: 1.625rem;
+    font-weight: 500;
+    color: #83869A;
+}
+
+.intro__button {
+    margin: 1.5rem auto 0 1rem;
+}
+
+.intro__img {
+    margin: 2.875rem 1.5em 0 1.5em;
+}
+
+/* || Course Tiles */
+
+.tiles-group {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FFFFFF; /* for browsers that don't support gradient */
+    background: linear-gradient(#FFFFFF, #F2F2F2);
+    flex: 1;
+}
+
+.tiles-group__heading {
+    color: #FFFFFF;
+    padding: 1.5rem 1.75rem 2rem 1.75rem;
+    margin: 0 1rem 0 1rem;
+    border-radius: 0.625rem;
+}
+
+.tile {
+    margin: 1.25rem;
+    background-color: #FFFFFF;
+    padding: 0 1.75rem;
+    border-radius: 0.625rem;
+    position: relative;
+}
+
+.tile__img {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: absolute;
+    top: -1.75rem;
+}
+
+.tile__title {
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-top: 3.5rem;
+}
+
+.tile__description {
+    font-weight: 500;
+    color: #83869A;
+    margin-top: 1rem;
+}
+
+.tile__button {
+    color: #F74780;
+    line-height: 1.75rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    border: none;
+    background-color: #FFFFFF;
+    margin: 1.5rem 0 2rem 0;
+}
+
+/** 
+Colors:
+
+#666CA3 light blue gray
+#13183F dark blue
+#83869A grey
+#F74780 dark pink
+#FFA7C3 light pink
+#FFFFFF white
+#F02AA6-FF6F48 orange to pink
+#4851FF-F02AA6 blue to purple
+
+**/
