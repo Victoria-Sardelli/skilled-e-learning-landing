@@ -20,6 +20,7 @@
     <p class="brand-name">skilled</p>
     <button class="get-started-button">Get Started</button>
   </header>
+
   <main>
     <section class="intro">
       <div>
@@ -28,10 +29,15 @@
           knowledge you need to live the life you want.</p>
         <button class="intro__button get-started-button warm-gradient">Get Started</button>
       </div>
-      <div class="intro__img-container">
-        <img class="intro__img" src="assets/image-hero-mobile@2x.webp" alt="woman sipping from mug while sitting in front of computer">
-      </div>
+      <picture class="intro__img-container">
+        <source class="intro__img" media="(min-width: 1440ox)" srcset="assets/image-hero-desktop.png, assets/image-hero-desktop@2x.png 2x" />
+        <source class="intro__img" media="(min-width: 768px)" srcset="assets/image-hero-tablet.png, assets/image-hero-tablet@2x.png 2x" />
+        <img class="intro__img"
+          srcset="assets/image-hero-mobile.png, assets/image-hero-mobile@2x.png 2x"
+          src="assets/image-hero-mobile.png" alt="woman sipping from mug while sitting in front of computer" />
+      </picture>
     </section>
+
     <section class="tiles-group">
       <div>
         <h2 class="tiles-group__heading warm-gradient">Check out our most popular courses!</h2>
@@ -83,6 +89,7 @@
       </article>
     </section>
   </main>
+
   <footer>
     <p class="brand-name brand-name--white">skilled</p>
     <button class="get-started-button cool-gradient">Get Started</button>
