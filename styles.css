@@ -93,6 +93,10 @@ main {
     margin: 1.5rem 0 2rem 0;
 }
 
+.tile__button:hover {
+    color: #FFA7C3;
+}
+
 /* || Header and Footer */
 
 header,
