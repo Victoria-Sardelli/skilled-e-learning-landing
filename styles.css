@@ -39,20 +39,51 @@ main {
 }
 
 .pill-button {
-    color: #FFFFFF;
-    background-color: #13183F;
     border-radius: 1.75rem;
     padding: 0.5625rem 1.5rem 0.6875rem 1.5rem;
 }
 
+.button-overlay {
+    position: relative;
+    border-radius: 1.75rem;
+    overflow: hidden;
+    width: fit-content;
+    height: fit-content;
+}
+
+.button-overlay:hover:after
+{
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    background-color: #FFFFFF;
+    opacity: 50%;
+}
+
+.dark-button {
+    color: #FFFFFF;
+    background-color: #13183F;
+}
+
+.dark-button:hover {
+    background-color: #666CA3;
+}
+
 .cool-gradient {
+    color: #FFFFFF;
     background-color: #4851FF; /* for browsers that don't support gradient */
     background: linear-gradient(#4851FF, #F02AA6);
 }
 
 .warm-gradient {
+    color: #FFFFFF;
     background-color: #FF6F48; /* for browsers that don't support gradient */
     background: linear-gradient(#FF6F48, #F02AA6);
+}
+
+.intro__button-container {
+    margin: 1.5rem auto 0 1rem;
 }
 
 .tile__button {
@@ -109,10 +140,6 @@ footer {
     line-height: 1.625rem;
     font-weight: 500;
     color: #83869A;
-}
-
-.intro__button {
-    margin: 1.5rem auto 0 1rem;
 }
 
 .intro__img-container {
