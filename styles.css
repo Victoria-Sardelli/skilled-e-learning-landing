@@ -32,12 +32,16 @@ main {
 /* || Buttons */
 
 .get-started-button {
-    color: #FFFFFF;
-    background-color: #13183F;
     font-weight: 700;
     border: none;
-    border-radius: 1.75rem;
     line-height: 1.75rem;
+    cursor: pointer;
+}
+
+.pill-button {
+    color: #FFFFFF;
+    background-color: #13183F;
+    border-radius: 1.75rem;
     padding: 0.5625rem 1.5rem 0.6875rem 1.5rem;
 }
 
@@ -49,6 +53,13 @@ main {
 .warm-gradient {
     background-color: #FF6F48; /* for browsers that don't support gradient */
     background: linear-gradient(#FF6F48, #F02AA6);
+}
+
+.tile__button {
+    color: #F74780;
+    background-color: #FFFFFF;
+    font-size: 1.125rem;
+    margin: 1.5rem 0 2rem 0;
 }
 
 /* || Header and Footer */
@@ -159,14 +170,4 @@ footer {
     font-weight: 500;
     color: #83869A;
     margin-top: 1rem;
-}
-
-.tile__button {
-    color: #F74780;
-    line-height: 1.75rem;
-    font-size: 1.125rem;
-    font-weight: 700;
-    border: none;
-    background-color: #FFFFFF;
-    margin: 1.5rem 0 2rem 0;
 }
