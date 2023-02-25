@@ -3,6 +3,7 @@
 html {
     box-sizing: border-box;
     font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 *, *:before, *:after {
@@ -23,6 +24,7 @@ main {
     flex: 1;
     display: flex;
     flex-direction: column;
+    max-width: 100vw;
 }
 
 .nowrap {
@@ -59,6 +61,7 @@ main {
     left: 0; right: 0;
     background-color: #FFFFFF;
     opacity: 50%;
+    cursor: pointer;
 }
 
 .dark-button {
@@ -83,7 +86,7 @@ main {
 }
 
 .intro__button-container {
-    margin: 1.5rem auto 0 1rem;
+    margin-top: 1.5rem;
 }
 
 .tile__button {
@@ -112,6 +115,8 @@ header {
 footer {
     background-color: #13183F;
     padding: 2.25rem 1rem 2.25rem 1rem;
+    display: flex;
+    align-items: center;
 }
 
 .brand-name {
@@ -130,17 +135,18 @@ footer {
     margin: 0;
     font-size: 2.5rem;
     font-weight: 800;
-    margin: 2.375rem 1rem 0 1rem;
+    margin-top: 2.375rem;
 }
 
 .intro {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0 1rem;
 }
 
 .intro__description {
-    margin: 1.625rem 1rem 0 1rem;
+    margin-top: 1.625rem;
     line-height: 1.625rem;
     font-weight: 500;
     color: #83869A;
@@ -164,19 +170,23 @@ footer {
     background-color: #FFFFFF; /* for browsers that don't support gradient */
     background: linear-gradient(#FFFFFF, #F0F1FF);
     flex: 1;
-    padding-bottom: 3.75rem;
+    padding: 0 1rem 3.75rem 1rem;
+}
+
+.tiles-group__heading-container {
+    display: flex;
+    padding: 1.5rem 1.75rem 2rem 1.75rem;
+    border-radius: 0.625rem;
 }
 
 .tiles-group__heading {
     color: #FFFFFF;
-    padding: 1.5rem 1.75rem 2rem 1.75rem;
-    margin: 0 1rem 0 1rem;
-    border-radius: 0.625rem;
     line-height: 2rem;
+    align-self: center;
 }
 
 .tile {
-    margin: 1.25rem;
+    margin-top: 2.5rem;
     background-color: #FFFFFF;
     padding: 0 1.75rem;
     border-radius: 0.625rem;
@@ -188,7 +198,7 @@ footer {
     width: 3.5rem;
     height: 3.5rem;
     position: absolute;
-    top: -1.75rem;
+    top: -1.5rem;
 }
 
 .tile__title {
@@ -201,4 +211,68 @@ footer {
     font-weight: 500;
     color: #83869A;
     margin-top: 1rem;
+}
+
+/* 
+    || TABLET 
+*/
+
+@media (min-width: 768px) and (max-width: 1439px) {
+
+    header {
+        padding: 1.5rem 2.375rem 0 2.375rem;
+    }
+
+    footer {
+        padding: 2.25rem 2.5rem 2.25rem 2.5rem;
+    }
+
+    .intro {
+        padding-left: 2.375rem;
+    }
+
+    .intro__heading {
+        margin-top: 6.1875rem;
+    }
+
+    .intro__text-container {
+        flex: 55%;
+        overflow: auto;
+    }
+
+    .intro__img-container {
+        flex: 45%;
+    }
+
+    .intro__img {
+        position: absolute;
+        top: -3rem;
+        right: -17rem;
+        max-width: 80vw;
+    }
+
+    .tiles-group {
+        column-gap: 0.6875rem;
+        padding: 0 2.5rem 5.375rem 2.5rem;
+        margin-top: 11.625rem;
+    }
+
+    .tiles-group__heading-container {
+        flex: 0 0 calc(50% - 0.6875rem);
+        margin: 2rem 0 0 0;
+    }
+
+    .tiles-group__heading {
+        align-self: flex-start;
+        padding-top: 3.5rem;
+    }
+
+    .tile {
+        flex: 0 0 calc(50% - 0.6875rem);
+        margin-top: 3.5rem;
+    }
+
+    .tile__title {
+        margin-top: 3.5rem;
+    }   
 }
