@@ -298,7 +298,7 @@ footer {
 
 @media (min-width: 1440px) {
     header {
-        padding: 1.8125rem 10.3125rem 0 10.3125rem;
+        padding: 1.5rem 10.3125rem 0 10.3125rem;
         z-index: 1; /* Prevents image from covering button in tablet and desktop mode */
     }
 
