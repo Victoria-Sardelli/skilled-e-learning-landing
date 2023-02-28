@@ -367,6 +367,7 @@ footer {
 
     .tile {
         flex: 0 0 calc(33.3% - 1.875rem);
+        padding: 0 2em;
     }
     
     .tile__title {
