@@ -90,11 +90,18 @@ main {
     margin-top: 1.5rem;
 }
 
+.tile__button-container {
+    position: relative;
+    flex: 1;
+}
+
 .tile__button {
     color: #F74780;
     background-color: #FFFFFF;
     font-size: 1.125rem;
-    margin: 1.5rem 0 2rem 0;
+    position: absolute;
+    bottom: 0;
+    line-height: 1.75rem;
 }
 
 .tile__button:hover {
@@ -190,10 +197,14 @@ footer {
 
 .tile {
     background-color: #FFFFFF;
-    padding: 0 1.75rem;
+    padding: 3.5rem 1.8125rem 2rem 1.75rem;
     border-radius: 0.625rem;
     position: relative;
     flex-grow: 1;
+    width: 21.4375rem;
+    height: 16.1875rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .tile__img {
@@ -206,13 +217,13 @@ footer {
 .tile__title {
     font-size: 1.25rem;
     font-weight: 800;
-    margin-top: 3.5rem;
 }
 
 .tile__description {
     font-weight: 500;
     color: #83869A;
     margin-top: 1rem;
+    line-height: 1.625rem;
 }
 
 /* 
@@ -274,12 +285,11 @@ footer {
     }
 
     .tile {
-        flex: 0 0 calc(50% - 0.6875rem);
+        flex: 1 0 calc(50% - 0.6875rem);
+        padding: 3.5rem 1.375rem 2rem 2rem;
+        width: 21.1875rem;
+        height: 16.1875rem;
     }
-
-    .tile__title {
-        margin-top: 3.5rem;
-    }   
 }
 
 /* || DESKTOP */
@@ -366,22 +376,19 @@ footer {
     }
 
     .tile {
-        flex: 0 0 calc(33.3% - 1.875rem);
-        padding: 0 2em;
+        flex: 1 0 calc(33.3% - 1.875rem);
+        padding: 4em 2em 2.5rem 2em;
+        width: 21.875rem;
+        height: 20.125rem;
     }
     
     .tile__title {
         font-size: 1.5rem;
-        margin-top: 4rem;
     }
 
     .tile__description {
         margin-top: 1.5rem;
         font-size: 1.125rem;
         line-height: 1.75rem;
-    }
-
-    .tile__button {
-        margin-bottom: 2.5rem;
     }
 }
