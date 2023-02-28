@@ -316,7 +316,7 @@ footer {
     }
 
     .intro__heading {
-        margin-top: 11.125rem;
+        margin-top: 11rem;
         font-size: 3.5rem;
     }
 
@@ -334,7 +334,7 @@ footer {
 
     .pill-button {
         border-radius: 1.75rem;
-        padding: 0.875rem 2rem 0.875rem 2rem;
+        padding: 0.875rem 1.9375rem 0.875rem 2rem;
     }
 
     .intro__button-container {
