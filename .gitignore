@@ -17,4 +17,4 @@
 
 # ignore template files and images not intended for final project
 README-template.md
-*.jpg
+preview.jpg
