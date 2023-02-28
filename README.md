@@ -44,7 +44,7 @@ Users should be able to:
 
 Two especially new and interesting challenges for me were:
 1. to display a half-opaque white overlay on the buttons upon hover
-2. to allow the banner image to "leak" into the section of text on its left, as well as the header above, while still controlling overflow on both tablet and desktop
+2. to allow the banner image to "leak" into the header above on both tablet and desktop (as well as the section of text on its left when on tablet mode), while still controlling overflow and making the header button clickable
 
 From this project, I learned a lot about positioning elements on the screen. I especially got to practice (and better appreciate!) the use of relative and absolute positioning. It was also one of the first times I used the flexbox gap property, which really came in handy for laying the square tiles out onto the screen with the right amount of space in between.
 
