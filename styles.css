@@ -271,7 +271,6 @@ footer {
     .tiles-group__heading-container {
         flex: 0 0 calc(50% - 0.6875rem);
         padding: 3.5rem 1.25rem 8.75rem 2rem;
-        margin: 2rem 0 0 0;
     }
 
     .tiles-group__heading {
