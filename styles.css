@@ -203,8 +203,7 @@ footer {
     border-radius: 0.625rem;
     position: relative;
     flex-grow: 1;
-    width: 21.4375rem;
-    height: 16.1875rem;
+    min-height: 16.1875rem;
     display: flex;
     flex-direction: column;
 }
@@ -289,8 +288,7 @@ footer {
     .tile {
         flex: 1 0 calc(50% - 0.6875rem);
         padding: 3.5rem 1.375rem 2rem 2rem;
-        width: 21.1875rem;
-        height: 16.1875rem;
+        min-height: 16.1875rem;
     }
 }
 
@@ -380,8 +378,7 @@ footer {
     .tile {
         flex: 1 0 calc(33.3% - 1.875rem);
         padding: 4em 2em 2.5rem 2em;
-        width: 21.875rem;
-        height: 20.125rem;
+        min-height: 20.125rem;
     }
     
     .tile__title {
